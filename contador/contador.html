@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <link rel="stylesheet" href="contador.css">
+</head>
+<body>
+    <div class="container">
+        <div class="counter-card">
+            <h1 class="title">Contador de Cliques</h1>
+            
+            <div class="counter-display">
+                <span id="contador">0</span>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="incrementar()">
+                    <span class="btn-icon">➕</span>
+                    Incrementar
+                </button>
+                <button class="btn btn-secondary" onclick="decrementar()">
+                    <span class="btn-icon">➖</span>
+                    Decrementar
+                </button>
+                <button class="btn btn-reset" onclick="resetar()">
+                    <span class="btn-icon">🔄</span>
+                    Resetar
+                </button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total de Cliques</span>
+                    <span class="stat-value" id="totalCliques">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="contador.js"></script>
+</body>
+</html>
